@@ -1,0 +1,167 @@
+const salesData = {
+    'Samsung': [
+        { mes: 'Agosto', valor: 500 },
+        { mes: 'Setembro', valor: 420 },
+        { mes: 'Outubro', valor: 550 },
+        { mes: 'Novembro', valor: 480 },
+      ],
+      'Apple': [
+        { mes: 'Agosto', valor: 400 },
+        { mes: 'Setembro', valor: 350 },
+        { mes: 'Outubro', valor: 480 },
+        { mes: 'Novembro', valor: 550 },
+      ],
+      'Sony': [
+        { mes: 'Agosto', valor: 450 },
+        { mes: 'Setembro', valor: 520 },
+        { mes: 'Outubro', valor: 500 },
+        { mes: 'Novembro', valor: 470 },
+      ],
+      'Dell': [
+        { mes: 'Agosto', valor: 300 },
+        { mes: 'Setembro', valor: 280 },
+        { mes: 'Outubro', valor: 320 },
+        { mes: 'Novembro', valor: 250 },
+      ],
+      'HP': [
+        { mes: 'Agosto', valor: 320 },
+        { mes: 'Setembro', valor: 300 },
+        { mes: 'Outubro', valor: 350 },
+        { mes: 'Novembro', valor: 380 },
+      ],
+      'Lenovo': [
+        { mes: 'Agosto', valor: 280 },
+        { mes: 'Setembro', valor: 250 },
+        { mes: 'Outubro', valor: 300 },
+        { mes: 'Novembro', valor: 320 },
+      ],
+      'LG': [
+        { mes: 'Agosto', valor: 450 },
+        { mes: 'Setembro', valor: 480 },
+        { mes: 'Outubro', valor: 500 },
+        { mes: 'Novembro', valor: 520 },
+      ],
+      'SamsungTV': [
+        { mes: 'Agosto', valor: 500 },
+        { mes: 'Setembro', valor: 420 },
+        { mes: 'Outubro', valor: 550 },
+        { mes: 'Novembro', valor: 480 },
+      ],
+      'Sony': [
+        { mes: 'Agosto', valor: 450 },
+        { mes: 'Setembro', valor: 520 },
+        { mes: 'Outubro', valor: 500 },
+        { mes: 'Novembro', valor: 470 },
+      ],
+      'Nike': [
+        { mes: 'Agosto', valor: 350 },
+        { mes: 'Setembro', valor: 400 },
+        { mes: 'Outubro', valor: 520 },
+        { mes: 'Novembro', valor: 200 },
+      ],
+      'Adidas': [
+        { mes: 'Agosto', valor: 300 },
+        { mes: 'Setembro', valor: 320 },
+        { mes: 'Outubro', valor: 350 },
+        { mes: 'Novembro', valor: 380 },
+      ],
+      'Puma': [
+        { mes: 'Agosto', valor: 250 },
+        { mes: 'Setembro', valor: 280 },
+        { mes: 'Outubro', valor: 300 },
+        { mes: 'Novembro', valor: 320 },
+      ],
+      'Levis': [
+        { mes: 'Agosto', valor: 320 },
+        { mes: 'Setembro', valor: 350 },
+        { mes: 'Outubro', valor: 380 },
+        { mes: 'Novembro', valor: 400 },
+      ],
+      'Diesel': [
+        { mes: 'Agosto', valor: 280 },
+        { mes: 'Setembro', valor: 310 },
+        { mes: 'Outubro', valor: 330 },
+        { mes: 'Novembro', valor: 300 },
+      ],
+      'Zara': [
+        { mes: 'Agosto', valor: 330 },
+        { mes: 'Setembro', valor: 350 },
+        { mes: 'Outubro', valor: 380 },
+        { mes: 'Novembro', valor: 400 },
+      ],
+      'North Face': [
+        { mes: 'Agosto', valor: 400 },
+        { mes: 'Setembro', valor: 420 },
+        { mes: 'Outubro', valor: 450 },
+        { mes: 'Novembro', valor: 480 },
+      ],
+      'Columbia': [
+        { mes: 'Agosto', valor: 350 },
+        { mes: 'Setembro', valor: 370 },
+        { mes: 'Outubro', valor: 400 },
+        { mes: 'Novembro', valor: 420 },
+      ],
+      'Patagonia': [
+        { mes: 'Agosto', valor: 300 },
+        { mes: 'Setembro', valor: 320 },
+        { mes: 'Outubro', valor: 350 },
+        { mes: 'Novembro', valor: 370 },
+      ],
+      'Toyota': [
+        { mes: 'Agosto', valor: 450 },
+        { mes: 'Setembro', valor: 480 },
+        { mes: 'Outubro', valor: 500 },
+        { mes: 'Novembro', valor: 520 },
+      ],
+      'Honda': [
+        { mes: 'Agosto', valor: 280 },
+        { mes: 'Setembro', valor: 310 },
+        { mes: 'Outubro', valor: 330 },
+        { mes: 'Novembro', valor: 300 },
+      ],
+      'Ford': [
+        { mes: 'Agosto', valor: 330 },
+        { mes: 'Setembro', valor: 350 },
+        { mes: 'Outubro', valor: 380 },
+        { mes: 'Novembro', valor: 400 },
+      ],
+      'Harley-Davidson': [
+        { mes: 'Agosto', valor: 400 },
+        { mes: 'Setembro', valor: 420 },
+        { mes: 'Outubro', valor: 450 },
+        { mes: 'Novembro', valor: 480 },
+      ],
+      'Yamaha': [
+        { mes: 'Agosto', valor: 350 },
+        { mes: 'Setembro', valor: 370 },
+        { mes: 'Outubro', valor: 400 },
+        { mes: 'Novembro', valor: 420 },
+      ],
+      'Suzuki': [
+        { mes: 'Agosto', valor: 300 },
+        { mes: 'Setembro', valor: 320 },
+        { mes: 'Outubro', valor: 350 },
+        { mes: 'Novembro', valor: 370 },
+      ],
+      'Volvo': [
+        { mes: 'Agosto', valor: 450 },
+        { mes: 'Setembro', valor: 480 },
+        { mes: 'Outubro', valor: 500 },
+        { mes: 'Novembro', valor: 520 },
+      ],
+      'Scania': [
+        { mes: 'Agosto', valor: 250 },
+        { mes: 'Setembro', valor: 270 },
+        { mes: 'Outubro', valor: 300 },
+        { mes: 'Novembro', valor: 320 },
+      ],
+      'Mercedes-Benz': [
+        { mes: 'Agosto', valor: 300 },
+        { mes: 'Setembro', valor: 320 },
+        { mes: 'Outubro', valor: 350 },
+        { mes: 'Novembro', valor: 370 },
+      ],
+
+}
+
+export default salesData;

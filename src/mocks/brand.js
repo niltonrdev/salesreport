@@ -1,8 +1,8 @@
  
-  const brandsByProduct = {
+const brandsByProduct = {
         'Smartphone': ['Samsung', 'Apple', 'Sony'],
         'Notebook': ['Dell', 'HP', 'Lenovo'],
-        'TV': ['LG', 'Samsung', 'Sony'],
+        'TV': ['LG', 'SamsungTV', 'Sony'],
         'Camiseta': ['Nike', 'Adidas', 'Puma'],
         'Calça': ['Levis', 'Diesel', 'Zara'],
         'Casaco': ['North Face', 'Columbia', 'Patagonia'],

@@ -7,10 +7,7 @@ export default function Section({ onSelect }) {
     const [category, setCategory] = useState(null);
     const [product, setProduct] = useState(null);
     const [brand, setBrand] = useState(null);
-  
     
-  
-   
   
     useEffect(() => {
       onSelect({ category, product, brand });
