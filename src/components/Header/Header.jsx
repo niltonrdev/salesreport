@@ -1,26 +1,33 @@
 import styled from "styled-components";
 import { BiMenu, BiUser } from "react-icons/bi";
+import Swal from "sweetalert2";
 
 export default function Header() {
   //Header fixo
-    return (
-        <>
-            <HeaderContainer>
-                <MenuContainer>
-                    <MenuIcon />
-                    <Title>SalesReport</Title>
-                    <Acess>
-                        <p>Faça <span>LOGIN </span>ou <br />
-                            crie seu <span>CADASTRO</span></p>
-                    </Acess>
-                    <AcessIcon>
-                      <UserIcon />
-                    </AcessIcon>
-                </MenuContainer>
-            </HeaderContainer>
+  return (
+    <>
+      <HeaderContainer>
+        <MenuContainer>
+          <MenuIcon />
+          <Title>SalesReport</Title>
+          <Acess onClick={() => {
+            Swal.fire({
+              title: 'Cadastro e Login',
+              text: 'Disponível em breve!',
+              icon: 'info',
+              confirmButtonText: 'OK'
+            });
+          }}>
+            <p>Faça <span>LOGIN </span>ou <br />crie seu <span>CADASTRO</span></p>
+          </Acess>
+          <AcessIcon>
+            <UserIcon />
+          </AcessIcon>
+        </MenuContainer>
+      </HeaderContainer >
 
-        </>
-    )
+    </>
+  )
 }
 
 const HeaderContainer = styled.div`
