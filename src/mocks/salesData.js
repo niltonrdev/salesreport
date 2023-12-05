@@ -1,5 +1,5 @@
 const salesData = {
-    'Samsung': [
+      'Samsung': [
         { mes: 'Agosto', valor: 500 },
         { mes: 'Setembro', valor: 220 },
         { mes: 'Outubro', valor: 550 },
@@ -156,7 +156,7 @@ const salesData = {
         { mes: 'Novembro', valor: 320 },
       ],
       'Mercedes-Benz': [
-        { mes: 'Agosto', valor: 100 },
+        { mes: 'Agosto', valor: 300 },
         { mes: 'Setembro', valor: 320 },
         { mes: 'Outubro', valor: 350 },
         { mes: 'Novembro', valor: 370 },

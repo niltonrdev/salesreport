@@ -1,14 +1,13 @@
 import styled from "styled-components";
 import salesData from "../../mocks/salesData";
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { BarChart, Bar, Rectangle, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+
 
 //importado o mock de dados das vendas relacionada a produto
 
 export default function Chart(selectedBrand) {
 
-    //recebe a marca escolhida por parametro e procura no mock
-
-    const brandData = salesData[selectedBrand.selectedBrand];
+    const brandData = salesData[selectedBrand.selectedBrand]; //recebe a marca escolhida por parametro e procura no mock
 
     //organiza os dados para apresentar no gráfico
 
@@ -22,7 +21,7 @@ export default function Chart(selectedBrand) {
             <CenteredGraphContainer>
                 <GraphContainer>
                     <ResponsiveContainer width="100%" height="100%">
-                        <LineChart
+                        <BarChart
                             width={500}
                             height={300}
                             data={data}
@@ -38,8 +37,9 @@ export default function Chart(selectedBrand) {
                             <YAxis />
                             <Tooltip />
                             <Legend />
-                            <Line type="monotone" dataKey="vendas" stroke="#0678a6" activeDot={{ r: 8 }} />
-                        </LineChart>
+                            <Bar dataKey="vendas" fill="#0678a6" activeBar={<Rectangle fill="red" stroke="blue" />} />
+
+                        </BarChart>
                     </ResponsiveContainer>
                 </GraphContainer>
             </CenteredGraphContainer>
@@ -57,5 +57,5 @@ const CenteredGraphContainer = styled.div`
 
 const GraphContainer = styled.div`
   width: 80%;
-  height: 390px;
+  height: 400px;
 `;
