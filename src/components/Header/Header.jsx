@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { BiMenu } from "react-icons/bi";
 
-export default function NavBar() {
+export default function Header() {
     return (
         <>
             <HeaderContainer>
