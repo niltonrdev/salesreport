@@ -1,7 +1,8 @@
 import styled from "styled-components";
-import { BiMenu } from "react-icons/bi";
+import { BiMenu, BiUser } from "react-icons/bi";
 
 export default function Header() {
+  //Header fixo
     return (
         <>
             <HeaderContainer>
@@ -12,6 +13,9 @@ export default function Header() {
                         <p>Faça <span>LOGIN </span>ou <br />
                             crie seu <span>CADASTRO</span></p>
                     </Acess>
+                    <AcessIcon>
+                      <UserIcon />
+                    </AcessIcon>
                 </MenuContainer>
             </HeaderContainer>
 
@@ -25,7 +29,6 @@ const HeaderContainer = styled.div`
   position: fixed;
   top: 0;
   width: 100%;
-
   z-index: 1000;
 `;
 
@@ -33,21 +36,19 @@ const MenuContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 55px;
   padding: 35px;
   height: 120px;
   background-color: #0678a6;
+  padding-left: 45px;
   `;
 
 const Title = styled.h1`
   font-size: 55px;
   font-weight: 600;
   font-family: "Montserrat";
-
+  margin-left: auto;  
+  margin-right: auto;  
   color: #ffffff;
-
-  margin-right: 200px;
-
   cursor: pointer;
 `;
 
@@ -56,6 +57,10 @@ const MenuIcon = styled(BiMenu)`
 
   width: 30px;
   height: 30px;
+
+  @media screen and (max-width: 530px) {
+    display: none;
+  }
 `;
 
 const Acess = styled.div`
@@ -74,4 +79,21 @@ const Acess = styled.div`
     font-size: 15px;
     cursor: pointer;
   }
+  @media screen and (max-width: 770px) {
+    display: none;
+  }
+`;
+
+const AcessIcon = styled.div`
+  display: flex;
+
+  @media screen and (max-width: 470px) {
+    display: none;
+  }
+`
+
+const UserIcon = styled(BiUser)`
+  color: #ffffff;
+  width: 30px;
+  height: 30px;
 `;

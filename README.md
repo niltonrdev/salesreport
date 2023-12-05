@@ -2,7 +2,7 @@
 Aplicação de front-end para o desafio técnico.
 
 ## Demo
-Aqui está o link do deploy do projeto: 
+Aqui está o link do deploy do projeto: https://salesreport-three.vercel.app/
 
 ## Como funciona?
 Este projeto é possível escolher uma marca e ver em gráfico as vendas nos últimos meses.
